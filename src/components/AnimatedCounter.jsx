@@ -22,7 +22,7 @@ const AnimatedCounter = () => {
       // Create the counting animation
       gsap.to(numberElement, {
         innerText: item.value,
-        duration: 2.5,
+        duration: 1.5,
         ease: "power2.out",
         snap: { innerText: 1 }, // Ensures whole numbers
         scrollTrigger: {
@@ -44,7 +44,7 @@ const AnimatedCounter = () => {
           <div
             key={index}
             ref={(el) => el && (countersRef.current[index] = el)}
-            className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center"
+            className="bg-zinc-900 p-10 flex flex-col justify-center"
           >
             <div className="counter-number text-white-50 text-5xl font-bold mb-2">
               0 {item.suffix}
