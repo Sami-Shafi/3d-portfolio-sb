@@ -235,20 +235,24 @@ const testimonials = [
 
 const socialImgs = [
 	{
-		name: "insta",
-		imgPath: "/images/insta.png",
-	},
-	{
-		name: "fb",
-		imgPath: "/images/fb.png",
-	},
-	{
-		name: "x",
-		imgPath: "/images/x.png",
+		name: "youtube",
+		imgPath: "/images/youtube.png",
+		href: `${import.meta.env.VITE_YOUTUBE_URL}`,
 	},
 	{
 		name: "linkedin",
 		imgPath: "/images/linkedin.png",
+		href: `${import.meta.env.VITE_LINKEDIN_URL}`,
+	},
+	{
+		name: "dribbble",
+		imgPath: "/images/dribbble.png",
+		href: `${import.meta.env.VITE_DRIBBBLE_URL}`,
+	},
+	{
+		name: "github",
+		imgPath: "/images/github.png",
+		href: `${import.meta.env.VITE_GITHUB_URL}`,
 	},
 ];
 
